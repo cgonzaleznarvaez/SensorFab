@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_user = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_signIn
@@ -91,21 +90,11 @@
             this.txt_password.Size = new System.Drawing.Size(119, 20);
             this.txt_password.TabIndex = 5;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(221, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "label3";
-            // 
             // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 172);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_user);
             this.Controls.Add(this.label2);
@@ -113,7 +102,8 @@
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_signIn);
             this.Name = "SignInForm";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Iniciar sesión";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,6 +117,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_user;
         private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.Label label3;
     }
 }

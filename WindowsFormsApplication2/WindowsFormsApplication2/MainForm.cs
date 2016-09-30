@@ -18,6 +18,7 @@ namespace WindowsFormsApplication2
         {
             database = new DBConnect();
             InitializeComponent();
+            logOffMenuItem.Visible = false;
             addMenuItem.Visible = false;
             removeMenuItem.Visible = false;
         }
@@ -37,14 +38,12 @@ namespace WindowsFormsApplication2
         {
             SignInForm signIn = new SignInForm(database);
             signIn.ShowDialog();
-            //ToolStripMenuItem add = new ToolStripMenuItem();
-            MessageBox.Show("LISTEN...");
             if (DBConnect.getIsEditor() == 1)
             {
                 addMenuItem.Visible = true;
                 removeMenuItem.Visible = true;
-                MessageBox.Show("EDITOR!");
-                
+                logOffMenuItem.Visible = true;
+                label1.Text = DBConnect.getUserName();
             }
             //database = new DBConnect();
             
@@ -65,5 +64,24 @@ namespace WindowsFormsApplication2
 
         }
 
+        private void logOffMenuItem_Click(object sender, EventArgs e)
+        {
+            DBConnect.closeSession();
+            addMenuItem.Visible = false;
+            removeMenuItem.Visible = false;
+            logOffMenuItem.Visible = false;
+            label1.Text = "";
+        }
+
+        private void addFamilyMenuItem_Click(object sender, EventArgs e)
+        {
+            AddFamily addFamily = new AddFamily(database);
+            addFamily.ShowDialog();
+        }
+
+        private void addModelMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

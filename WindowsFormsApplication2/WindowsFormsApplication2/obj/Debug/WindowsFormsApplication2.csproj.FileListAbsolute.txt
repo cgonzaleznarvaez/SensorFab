@@ -11,3 +11,20 @@ C:\Users\cgonza05\documents\visual studio 2015\Projects\WindowsFormsApplication2
 C:\Users\cgonza05\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.dll
 C:\Users\cgonza05\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.xml
 C:\Users\cgonza05\documents\visual studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.SignInForm.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.dll
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.xml
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddWOForm.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.SignInForm.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddForms.AddCompound.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddFamily.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddForms.AddModel.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddForms.AddPrimeMatter.resources

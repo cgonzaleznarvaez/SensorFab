@@ -34,6 +34,7 @@ namespace WindowsFormsApplication2
             user = txt_user.Text.ToString();
             password = txt_password.Text.ToString();
             database.selectEmployee(user, password);
+            
             //database.closeConnection();
             this.Close();
         }

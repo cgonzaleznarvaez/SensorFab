@@ -18,6 +18,7 @@ namespace WindowsFormsApplication2
         private string password;
         private string connectionString;
         private static int isEditor = 0;
+        private static string loggedUser;
         public string state;
 
         public DBConnect()
@@ -38,11 +39,7 @@ namespace WindowsFormsApplication2
 
         public void connect(String connectionString)
         {
-            
             connection = new MySqlConnection(connectionString);
-            //this.openConnection();
-            //Console.WriteLine(connection.State.ToString());
-
         }
 
         public void insert()
@@ -58,6 +55,25 @@ namespace WindowsFormsApplication2
                 //Execute command
                 cmd.ExecuteNonQuery();
 
+                //close connection
+                this.closeConnection();
+            }
+        }
+
+        public void insert(String query)
+        {
+            //string query = "INSERT INTO family (family_name) VALUES('volvo')";
+
+            //open connection
+            if (this.openConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                //Execute command
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Success?");
                 //close connection
                 this.closeConnection();
             }
@@ -93,7 +109,7 @@ namespace WindowsFormsApplication2
 
         public List<string>[] selectEmployee(String user, String pass)
         {
-            //String query = "SELECT * FROM employee WHERE employee_id=" + user + " AND password=" + pass;
+
             String query = "SELECT * FROM employee WHERE employee_id=1 AND password=1234";
             List<string>[] list = new List<string>[4];
 
@@ -107,7 +123,7 @@ namespace WindowsFormsApplication2
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
-                MessageBox.Show(query);
+                //MessageBox.Show(query);
                 //el read es como un pop cada que se usa
                 while (dataReader.Read())
                 {
@@ -116,19 +132,19 @@ namespace WindowsFormsApplication2
                     list[1].Add(dataReader["employee_name"] + "");
                     list[2].Add(dataReader["password"] + "");
                     list[3].Add(dataReader["editor"] + "");
-                    //MessageBox.Show("dataReader[\"editor\"].ToString()=" + dataReader["editor"].ToString());
-                    if (dataReader["editor"].ToString() == "True" )
+
+                    if (dataReader["editor"].ToString() == "True")
                     {
+                        loggedUser = dataReader["employee_name"].ToString();
                         isEditor = 1;
                     }
-                    //MessageBox.Show(dataReader["employee_name"].ToString() + " editor =" + dataReader["editor"].ToString());
+                    else
+                        isEditor = 0;
 
                 }
                 
-                //MessageBox.Show(list[1][0].ToString());
                 dataReader.Close();
 
-                //sMessageBox.Show(list[3]);
                 this.closeConnection();
                 return list;
             }
@@ -181,8 +197,17 @@ namespace WindowsFormsApplication2
         }
         public static int getIsEditor()
         {
-            //MessageBox.Show("does this even run?" + isEditor);
             return isEditor;
+        }
+
+        public static String getUserName()
+        {
+            return loggedUser;
+        }
+
+        public static void closeSession()
+        {
+            isEditor = 0;
         }
     }
 }

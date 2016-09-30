@@ -29,13 +29,13 @@
         /// 
         private void InitializeComponent()
         {
-            
             this.exit = new System.Windows.Forms.Button();
             this.printTag = new System.Windows.Forms.Button();
             this.addWorkOrder = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signInMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOffMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addFamilyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPrimeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -101,6 +101,7 @@
             // 
             this.menuMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.signInMenuItem,
+            this.logOffMenuItem,
             this.addMenuItem,
             this.removeMenuItem});
             this.menuMenuItem.Name = "menuMenuItem";
@@ -113,6 +114,13 @@
             this.signInMenuItem.Size = new System.Drawing.Size(152, 22);
             this.signInMenuItem.Text = "Iniciar sesión";
             this.signInMenuItem.Click += new System.EventHandler(this.iniciarSesiónToolStripMenuItem_Click);
+            // 
+            // logOffMenuItem
+            // 
+            this.logOffMenuItem.Name = "logOffMenuItem";
+            this.logOffMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.logOffMenuItem.Text = "Cerrar sesión";
+            this.logOffMenuItem.Click += new System.EventHandler(this.logOffMenuItem_Click);
             // 
             // addMenuItem
             // 
@@ -129,31 +137,33 @@
             // addFamilyMenuItem
             // 
             this.addFamilyMenuItem.Name = "addFamilyMenuItem";
-            this.addFamilyMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.addFamilyMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addFamilyMenuItem.Text = "Familia";
+            this.addFamilyMenuItem.Click += new System.EventHandler(this.addFamilyMenuItem_Click);
             // 
             // addPrimeMenuItem
             // 
             this.addPrimeMenuItem.Name = "addPrimeMenuItem";
-            this.addPrimeMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.addPrimeMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addPrimeMenuItem.Text = "Materia prima";
             // 
             // addCompoundMenuItem
             // 
             this.addCompoundMenuItem.Name = "addCompoundMenuItem";
-            this.addCompoundMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.addCompoundMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addCompoundMenuItem.Text = "Pasta";
             // 
             // addModelMenuItem
             // 
             this.addModelMenuItem.Name = "addModelMenuItem";
-            this.addModelMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.addModelMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addModelMenuItem.Text = "Modelo";
+            this.addModelMenuItem.Click += new System.EventHandler(this.addModelMenuItem_Click);
             // 
             // addEmployeeStripMenuItem
             // 
             this.addEmployeeStripMenuItem.Name = "addEmployeeStripMenuItem";
-            this.addEmployeeStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.addEmployeeStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addEmployeeStripMenuItem.Text = "Empleado";
             // 
             // removeMenuItem
@@ -200,12 +210,11 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(446, 34);
+            this.label1.Location = new System.Drawing.Point(384, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(131, 24);
             this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // MainForm
             // 
@@ -250,6 +259,7 @@
         private System.Windows.Forms.Label label1;
 
         public static int editor = 0;
+        private System.Windows.Forms.ToolStripMenuItem logOffMenuItem;
     }
 }
 

@@ -47,6 +47,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddForms\AddCompound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddCompound.Designer.cs">
+      <DependentUpon>AddCompound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddFamily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddFamily.Designer.cs">
+      <DependentUpon>AddFamily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddModel.Designer.cs">
+      <DependentUpon>AddModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddPrimeMatter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddPrimeMatter.Designer.cs">
+      <DependentUpon>AddPrimeMatter.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddWOForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +92,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddForms\AddCompound.resx">
+      <DependentUpon>AddCompound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddFamily.resx">
+      <DependentUpon>AddFamily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddModel.resx">
+      <DependentUpon>AddModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddPrimeMatter.resx">
+      <DependentUpon>AddPrimeMatter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddWOForm.resx">
       <DependentUpon>AddWOForm.cs</DependentUpon>
     </EmbeddedResource>
