@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2.AddForms
+﻿namespace WindowsFormsApplication2
 {
     partial class AddModel
     {
@@ -30,17 +30,17 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.familyComboBox = new System.Windows.Forms.ComboBox();
+            this.subSubComboBox = new System.Windows.Forms.ComboBox();
+            this.subDiaComboBox = new System.Windows.Forms.ComboBox();
+            this.primeSubComboBox = new System.Windows.Forms.ComboBox();
+            this.primeDiaComboBox = new System.Windows.Forms.ComboBox();
+            this.goldBackComboBox = new System.Windows.Forms.ComboBox();
+            this.glassComboBox = new System.Windows.Forms.ComboBox();
+            this.fritComboBox = new System.Windows.Forms.ComboBox();
+            this.goldFrontComboBox = new System.Windows.Forms.ComboBox();
+            this.pinkGlassComboBox = new System.Windows.Forms.ComboBox();
+            this.conductorComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -72,93 +72,93 @@
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
             // 
-            // comboBox1
+            // familyComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(112, 80);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
+            this.familyComboBox.FormattingEnabled = true;
+            this.familyComboBox.Location = new System.Drawing.Point(112, 80);
+            this.familyComboBox.Name = "familyComboBox";
+            this.familyComboBox.Size = new System.Drawing.Size(121, 21);
+            this.familyComboBox.TabIndex = 2;
             // 
-            // comboBox2
+            // subSubComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(398, 27);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 3;
+            this.subSubComboBox.FormattingEnabled = true;
+            this.subSubComboBox.Location = new System.Drawing.Point(398, 27);
+            this.subSubComboBox.Name = "subSubComboBox";
+            this.subSubComboBox.Size = new System.Drawing.Size(121, 21);
+            this.subSubComboBox.TabIndex = 3;
             // 
-            // comboBox3
+            // subDiaComboBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(398, 52);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 4;
+            this.subDiaComboBox.FormattingEnabled = true;
+            this.subDiaComboBox.Location = new System.Drawing.Point(398, 52);
+            this.subDiaComboBox.Name = "subDiaComboBox";
+            this.subDiaComboBox.Size = new System.Drawing.Size(121, 21);
+            this.subDiaComboBox.TabIndex = 4;
             // 
-            // comboBox4
+            // primeSubComboBox
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(398, 79);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 5;
+            this.primeSubComboBox.FormattingEnabled = true;
+            this.primeSubComboBox.Location = new System.Drawing.Point(398, 79);
+            this.primeSubComboBox.Name = "primeSubComboBox";
+            this.primeSubComboBox.Size = new System.Drawing.Size(121, 21);
+            this.primeSubComboBox.TabIndex = 5;
             // 
-            // comboBox5
+            // primeDiaComboBox
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(398, 106);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 6;
+            this.primeDiaComboBox.FormattingEnabled = true;
+            this.primeDiaComboBox.Location = new System.Drawing.Point(398, 106);
+            this.primeDiaComboBox.Name = "primeDiaComboBox";
+            this.primeDiaComboBox.Size = new System.Drawing.Size(121, 21);
+            this.primeDiaComboBox.TabIndex = 6;
             // 
-            // comboBox6
+            // goldBackComboBox
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(112, 154);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 7;
+            this.goldBackComboBox.FormattingEnabled = true;
+            this.goldBackComboBox.Location = new System.Drawing.Point(112, 154);
+            this.goldBackComboBox.Name = "goldBackComboBox";
+            this.goldBackComboBox.Size = new System.Drawing.Size(121, 21);
+            this.goldBackComboBox.TabIndex = 7;
             // 
-            // comboBox7
+            // glassComboBox
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(112, 182);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(121, 21);
-            this.comboBox7.TabIndex = 9;
+            this.glassComboBox.FormattingEnabled = true;
+            this.glassComboBox.Location = new System.Drawing.Point(112, 182);
+            this.glassComboBox.Name = "glassComboBox";
+            this.glassComboBox.Size = new System.Drawing.Size(121, 21);
+            this.glassComboBox.TabIndex = 9;
             // 
-            // comboBox8
+            // fritComboBox
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(112, 209);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(121, 21);
-            this.comboBox8.TabIndex = 11;
+            this.fritComboBox.FormattingEnabled = true;
+            this.fritComboBox.Location = new System.Drawing.Point(112, 209);
+            this.fritComboBox.Name = "fritComboBox";
+            this.fritComboBox.Size = new System.Drawing.Size(121, 21);
+            this.fritComboBox.TabIndex = 11;
             // 
-            // comboBox9
+            // goldFrontComboBox
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(327, 154);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 21);
-            this.comboBox9.TabIndex = 8;
+            this.goldFrontComboBox.FormattingEnabled = true;
+            this.goldFrontComboBox.Location = new System.Drawing.Point(327, 154);
+            this.goldFrontComboBox.Name = "goldFrontComboBox";
+            this.goldFrontComboBox.Size = new System.Drawing.Size(121, 21);
+            this.goldFrontComboBox.TabIndex = 8;
             // 
-            // comboBox10
+            // pinkGlassComboBox
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(327, 182);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(121, 21);
-            this.comboBox10.TabIndex = 10;
+            this.pinkGlassComboBox.FormattingEnabled = true;
+            this.pinkGlassComboBox.Location = new System.Drawing.Point(327, 182);
+            this.pinkGlassComboBox.Name = "pinkGlassComboBox";
+            this.pinkGlassComboBox.Size = new System.Drawing.Size(121, 21);
+            this.pinkGlassComboBox.TabIndex = 10;
             // 
-            // comboBox11
+            // conductorComboBox
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(327, 212);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(121, 21);
-            this.comboBox11.TabIndex = 12;
+            this.conductorComboBox.FormattingEnabled = true;
+            this.conductorComboBox.Location = new System.Drawing.Point(327, 212);
+            this.conductorComboBox.Name = "conductorComboBox";
+            this.conductorComboBox.Size = new System.Drawing.Size(121, 21);
+            this.conductorComboBox.TabIndex = 12;
             // 
             // label1
             // 
@@ -315,21 +315,22 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.conductorComboBox);
+            this.Controls.Add(this.pinkGlassComboBox);
+            this.Controls.Add(this.goldFrontComboBox);
+            this.Controls.Add(this.fritComboBox);
+            this.Controls.Add(this.glassComboBox);
+            this.Controls.Add(this.goldBackComboBox);
+            this.Controls.Add(this.primeDiaComboBox);
+            this.Controls.Add(this.primeSubComboBox);
+            this.Controls.Add(this.subDiaComboBox);
+            this.Controls.Add(this.subSubComboBox);
+            this.Controls.Add(this.familyComboBox);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "AddModel";
             this.Text = "AddModel";
+            this.Load += new System.EventHandler(this.AddModel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,17 +340,17 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox familyComboBox;
+        private System.Windows.Forms.ComboBox subSubComboBox;
+        private System.Windows.Forms.ComboBox subDiaComboBox;
+        private System.Windows.Forms.ComboBox primeSubComboBox;
+        private System.Windows.Forms.ComboBox primeDiaComboBox;
+        private System.Windows.Forms.ComboBox goldBackComboBox;
+        private System.Windows.Forms.ComboBox glassComboBox;
+        private System.Windows.Forms.ComboBox fritComboBox;
+        private System.Windows.Forms.ComboBox goldFrontComboBox;
+        private System.Windows.Forms.ComboBox pinkGlassComboBox;
+        private System.Windows.Forms.ComboBox conductorComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

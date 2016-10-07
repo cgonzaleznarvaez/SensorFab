@@ -13,6 +13,7 @@ namespace WindowsFormsApplication2
     public partial class AddFamily : Form
     {
         DBConnect database;
+
         public AddFamily(DBConnect db)
         {
             InitializeComponent();

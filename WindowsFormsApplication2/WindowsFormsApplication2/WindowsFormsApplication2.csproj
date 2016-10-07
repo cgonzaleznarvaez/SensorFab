@@ -71,10 +71,10 @@
     <Compile Include="AddForms\AddPrimeMatter.Designer.cs">
       <DependentUpon>AddPrimeMatter.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddWOForm.cs">
+    <Compile Include="AddForms\AddWOForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddWOForm.Designer.cs">
+    <Compile Include="AddForms\AddWOForm.Designer.cs">
       <DependentUpon>AddWOForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
@@ -104,7 +104,7 @@
     <EmbeddedResource Include="AddForms\AddPrimeMatter.resx">
       <DependentUpon>AddPrimeMatter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddWOForm.resx">
+    <EmbeddedResource Include="AddForms\AddWOForm.resx">
       <DependentUpon>AddWOForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignInForm.resx">

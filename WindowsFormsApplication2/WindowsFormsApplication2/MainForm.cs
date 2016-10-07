@@ -81,7 +81,8 @@ namespace WindowsFormsApplication2
 
         private void addModelMenuItem_Click(object sender, EventArgs e)
         {
-            
+            AddModel addModel = new AddModel(database);
+            addModel.ShowDialog();
         }
     }
 }

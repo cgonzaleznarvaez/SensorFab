@@ -26,5 +26,5 @@ C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\Wind
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddForms.AddCompound.resources
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddFamily.resources
-C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddForms.AddModel.resources
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddForms.AddPrimeMatter.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddModel.resources
