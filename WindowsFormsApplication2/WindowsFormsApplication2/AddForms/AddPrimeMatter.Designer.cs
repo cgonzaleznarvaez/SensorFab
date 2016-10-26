@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2.AddForms
+﻿namespace WindowsFormsApplication2
 {
     partial class AddPrimeMatter
     {
@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.substractRadBtn = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.substrateRadBtn = new System.Windows.Forms.RadioButton();
+            this.diafragmRadBtn = new System.Windows.Forms.RadioButton();
             this.primeMatterTxt = new System.Windows.Forms.TextBox();
             this.acceptBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // substractRadBtn
+            // substrateRadBtn
             // 
-            this.substractRadBtn.AutoSize = true;
-            this.substractRadBtn.Location = new System.Drawing.Point(187, 30);
-            this.substractRadBtn.Name = "substractRadBtn";
-            this.substractRadBtn.Size = new System.Drawing.Size(70, 17);
-            this.substractRadBtn.TabIndex = 0;
-            this.substractRadBtn.TabStop = true;
-            this.substractRadBtn.Text = "Substrato";
-            this.substractRadBtn.UseVisualStyleBackColor = true;
+            this.substrateRadBtn.AutoSize = true;
+            this.substrateRadBtn.Location = new System.Drawing.Point(187, 30);
+            this.substrateRadBtn.Name = "substrateRadBtn";
+            this.substrateRadBtn.Size = new System.Drawing.Size(70, 17);
+            this.substrateRadBtn.TabIndex = 0;
+            this.substrateRadBtn.TabStop = true;
+            this.substrateRadBtn.Text = "Substrato";
+            this.substrateRadBtn.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // diafragmRadBtn
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(187, 54);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Diafragma";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.diafragmRadBtn.AutoSize = true;
+            this.diafragmRadBtn.Location = new System.Drawing.Point(187, 54);
+            this.diafragmRadBtn.Name = "diafragmRadBtn";
+            this.diafragmRadBtn.Size = new System.Drawing.Size(73, 17);
+            this.diafragmRadBtn.TabIndex = 1;
+            this.diafragmRadBtn.TabStop = true;
+            this.diafragmRadBtn.Text = "Diafragma";
+            this.diafragmRadBtn.UseVisualStyleBackColor = true;
             // 
             // primeMatterTxt
             // 
@@ -73,6 +73,7 @@
             this.acceptBtn.TabIndex = 3;
             this.acceptBtn.Text = "Aceptar";
             this.acceptBtn.UseVisualStyleBackColor = true;
+            this.acceptBtn.Click += new System.EventHandler(this.acceptBtn_Click);
             // 
             // cancelBtn
             // 
@@ -82,6 +83,7 @@
             this.cancelBtn.TabIndex = 4;
             this.cancelBtn.Text = "Cancelar";
             this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // label1
             // 
@@ -101,8 +103,8 @@
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.acceptBtn);
             this.Controls.Add(this.primeMatterTxt);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.substractRadBtn);
+            this.Controls.Add(this.diafragmRadBtn);
+            this.Controls.Add(this.substrateRadBtn);
             this.Name = "AddPrimeMatter";
             this.Text = "AddPrimeMatter";
             this.ResumeLayout(false);
@@ -112,8 +114,8 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton substractRadBtn;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton substrateRadBtn;
+        private System.Windows.Forms.RadioButton diafragmRadBtn;
         private System.Windows.Forms.TextBox primeMatterTxt;
         private System.Windows.Forms.Button acceptBtn;
         private System.Windows.Forms.Button cancelBtn;

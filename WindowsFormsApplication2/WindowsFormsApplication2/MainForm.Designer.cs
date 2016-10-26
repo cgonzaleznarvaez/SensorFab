@@ -41,7 +41,7 @@
             this.addPrimeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCompoundMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addModelMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addEmployeeStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addEmployeeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeFamilyMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removePrimeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -113,7 +113,7 @@
             this.signInMenuItem.Name = "signInMenuItem";
             this.signInMenuItem.Size = new System.Drawing.Size(152, 22);
             this.signInMenuItem.Text = "Iniciar sesión";
-            this.signInMenuItem.Click += new System.EventHandler(this.iniciarSesiónToolStripMenuItem_Click);
+            this.signInMenuItem.Click += new System.EventHandler(this.signInMenuItem_Click);
             // 
             // logOffMenuItem
             // 
@@ -129,7 +129,7 @@
             this.addPrimeMenuItem,
             this.addCompoundMenuItem,
             this.addModelMenuItem,
-            this.addEmployeeStripMenuItem});
+            this.addEmployeeMenuItem});
             this.addMenuItem.Name = "addMenuItem";
             this.addMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addMenuItem.Text = "Agregar";
@@ -146,12 +146,14 @@
             this.addPrimeMenuItem.Name = "addPrimeMenuItem";
             this.addPrimeMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addPrimeMenuItem.Text = "Materia prima";
+            this.addPrimeMenuItem.Click += new System.EventHandler(this.addPrimeMenuItem_Click);
             // 
             // addCompoundMenuItem
             // 
             this.addCompoundMenuItem.Name = "addCompoundMenuItem";
             this.addCompoundMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addCompoundMenuItem.Text = "Pasta";
+            this.addCompoundMenuItem.Click += new System.EventHandler(this.addCompoundMenuItem_Click);
             // 
             // addModelMenuItem
             // 
@@ -160,11 +162,12 @@
             this.addModelMenuItem.Text = "Modelo";
             this.addModelMenuItem.Click += new System.EventHandler(this.addModelMenuItem_Click);
             // 
-            // addEmployeeStripMenuItem
+            // addEmployeeMenuItem
             // 
-            this.addEmployeeStripMenuItem.Name = "addEmployeeStripMenuItem";
-            this.addEmployeeStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.addEmployeeStripMenuItem.Text = "Empleado";
+            this.addEmployeeMenuItem.Name = "addEmployeeMenuItem";
+            this.addEmployeeMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addEmployeeMenuItem.Text = "Empleado";
+            this.addEmployeeMenuItem.Click += new System.EventHandler(this.addEmployeeMenuItem_Click);
             // 
             // removeMenuItem
             // 
@@ -249,7 +252,7 @@
         private System.Windows.Forms.ToolStripMenuItem addPrimeMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addCompoundMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addModelMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addEmployeeStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addEmployeeMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeFamilyMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removePrimeMenuItem;

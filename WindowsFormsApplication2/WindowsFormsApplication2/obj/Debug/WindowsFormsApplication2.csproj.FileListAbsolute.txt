@@ -24,7 +24,12 @@ C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\Wind
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.MainForm.resources
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
-C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddForms.AddCompound.resources
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddFamily.resources
-C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddForms.AddPrimeMatter.resources
 C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddModel.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddPrimeMatter.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddCompound.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.AddEmployee.resources
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\PdfSharp.dll
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\PdfSharp.pdb
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\PdfSharp.xml
+C:\Users\cgonza05\Source\Repos\SensorFab\SensorFab\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\de\PdfSharp.resources.dll

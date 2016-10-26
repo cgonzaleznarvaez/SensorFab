@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\..\..\..\..\Downloads\PDFSharp-MigraDocFoundation-1_32\PDFsharp\code\PdfSharp\bin\Debug\PdfSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +55,12 @@
     </Compile>
     <Compile Include="AddForms\AddCompound.Designer.cs">
       <DependentUpon>AddCompound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="AddForms\AddFamily.cs">
       <SubType>Form</SubType>
@@ -77,7 +86,9 @@
     <Compile Include="AddForms\AddWOForm.Designer.cs">
       <DependentUpon>AddWOForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Base.cs" />
     <Compile Include="DBConnect.cs" />
+    <Compile Include="PDF.cs" />
     <Compile Include="SignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +105,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddForms\AddCompound.resx">
       <DependentUpon>AddCompound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddForms\AddFamily.resx">
       <DependentUpon>AddFamily.cs</DependentUpon>
@@ -122,7 +136,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

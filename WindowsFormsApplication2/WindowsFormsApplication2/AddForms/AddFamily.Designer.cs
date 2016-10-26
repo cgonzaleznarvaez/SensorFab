@@ -52,6 +52,7 @@
             this.cancelBtn.TabIndex = 1;
             this.cancelBtn.Text = "Cancelar";
             this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // familyTxt
             // 
@@ -79,6 +80,7 @@
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.addBtn);
             this.Name = "AddFamily";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar nueva familia";
             this.ResumeLayout(false);
             this.PerformLayout();

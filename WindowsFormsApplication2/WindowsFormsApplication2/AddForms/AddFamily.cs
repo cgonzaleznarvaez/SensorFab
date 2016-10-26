@@ -20,13 +20,21 @@ namespace WindowsFormsApplication2
             database = db;
         }
 
-        //Inserting a new Family*****************************************************************
+        //Inserting a new Family
         private void addBtn_Click(object sender, EventArgs e)
         {
             String family = familyTxt.Text.ToString();
             String query = "INSERT INTO family VALUES ('" + family + "');";
 
             database.insert(query);
+
+            this.Close();
+        }
+
+        //Closing Form
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

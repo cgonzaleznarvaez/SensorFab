@@ -42,6 +42,10 @@ namespace WindowsFormsApplication2
             connection = new MySqlConnection(connectionString);
         }
 
+        /*
+         * 
+         * 
+         * TO DELETE******************************
         public void insert()
         {
             string query = "INSERT INTO family (family_name) VALUES('volvo')";
@@ -59,7 +63,7 @@ namespace WindowsFormsApplication2
                 this.closeConnection();
             }
         }
-
+        */
         public void insert(String query)
         {
             //string query = "INSERT INTO family (family_name) VALUES('volvo')";
@@ -110,7 +114,9 @@ namespace WindowsFormsApplication2
         public List<string>[] selectEmployee(String user, String pass)
         {
 
-            String query = "SELECT * FROM employee WHERE employee_id=1 AND password=1234";
+            //String query = "SELECT * FROM employee WHERE employee_id=1 AND password=1234";
+            String query = "SELECT * FROM employee WHERE employee_id=" + user + " AND password='" + pass + "'";
+            //String query = "SELECT * FROM employee WHERE employee_id=123456 AND password='null'";
             List<string>[] list = new List<string>[4];
 
             list[0] = new List<string>();
@@ -123,7 +129,6 @@ namespace WindowsFormsApplication2
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
-                //MessageBox.Show(query);
                 //el read es como un pop cada que se usa
                 while (dataReader.Read())
                 {
@@ -133,16 +138,16 @@ namespace WindowsFormsApplication2
                     list[2].Add(dataReader["password"] + "");
                     list[3].Add(dataReader["editor"] + "");
 
+                    loggedUser = dataReader["employee_name"].ToString();
                     if (dataReader["editor"].ToString() == "True")
                     {
-                        loggedUser = dataReader["employee_name"].ToString();
                         isEditor = 1;
                     }
                     else
                         isEditor = 0;
 
                 }
-                
+                MessageBox.Show(loggedUser);
                 dataReader.Close();
 
                 this.closeConnection();
@@ -181,6 +186,7 @@ namespace WindowsFormsApplication2
             }
         }
 
+        //This runs after every query
         public bool closeConnection()
         {
             try
@@ -195,6 +201,7 @@ namespace WindowsFormsApplication2
                 return false;
             }
         }
+
         public static int getIsEditor()
         {
             return isEditor;
@@ -205,8 +212,10 @@ namespace WindowsFormsApplication2
             return loggedUser;
         }
 
+        //This runs when user selects "Cerrar sesion"
         public static void closeSession()
         {
+            loggedUser = "";
             isEditor = 0;
         }
     }

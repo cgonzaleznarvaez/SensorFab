@@ -24,7 +24,7 @@ namespace WindowsFormsApplication2
 
         private void continueButton_Click(object sender, EventArgs e)
         {
-
+            PDF pdf = new PDF();
         }
     }
 }

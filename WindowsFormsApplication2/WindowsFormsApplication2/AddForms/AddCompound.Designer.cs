@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2.AddForms
+﻿namespace WindowsFormsApplication2
 {
     partial class AddCompound
     {
@@ -29,23 +29,52 @@
         private void InitializeComponent()
         {
             this.compoundTxt = new System.Windows.Forms.TextBox();
+            this.acceptBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.goldBackRadBtn = new System.Windows.Forms.RadioButton();
             this.goldFrontRadBtn = new System.Windows.Forms.RadioButton();
             this.pinkGlassRadBtn = new System.Windows.Forms.RadioButton();
             this.glassRadBtn = new System.Windows.Forms.RadioButton();
             this.conductorRadBtn = new System.Windows.Forms.RadioButton();
             this.fritRadBtn = new System.Windows.Forms.RadioButton();
-            this.acceptBtn = new System.Windows.Forms.Button();
-            this.cancelBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // compoundTxt
             // 
-            this.compoundTxt.Location = new System.Drawing.Point(135, 21);
+            this.compoundTxt.Location = new System.Drawing.Point(161, 27);
             this.compoundTxt.Name = "compoundTxt";
             this.compoundTxt.Size = new System.Drawing.Size(100, 20);
             this.compoundTxt.TabIndex = 0;
+            // 
+            // acceptBtn
+            // 
+            this.acceptBtn.Location = new System.Drawing.Point(79, 153);
+            this.acceptBtn.Name = "acceptBtn";
+            this.acceptBtn.Size = new System.Drawing.Size(75, 23);
+            this.acceptBtn.TabIndex = 7;
+            this.acceptBtn.Text = "Aceptar";
+            this.acceptBtn.UseVisualStyleBackColor = true;
+            this.acceptBtn.Click += new System.EventHandler(this.acceptBtn_Click);
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.Location = new System.Drawing.Point(161, 153);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(75, 23);
+            this.cancelBtn.TabIndex = 8;
+            this.cancelBtn.Text = "Cancelar";
+            this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(66, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Nombre de Pasta";
             // 
             // goldBackRadBtn
             // 
@@ -113,38 +142,11 @@
             this.fritRadBtn.Text = "Frit";
             this.fritRadBtn.UseVisualStyleBackColor = true;
             // 
-            // acceptBtn
-            // 
-            this.acceptBtn.Location = new System.Drawing.Point(43, 153);
-            this.acceptBtn.Name = "acceptBtn";
-            this.acceptBtn.Size = new System.Drawing.Size(75, 23);
-            this.acceptBtn.TabIndex = 7;
-            this.acceptBtn.Text = "Aceptar";
-            this.acceptBtn.UseVisualStyleBackColor = true;
-            // 
-            // cancelBtn
-            // 
-            this.cancelBtn.Location = new System.Drawing.Point(125, 153);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(75, 23);
-            this.cancelBtn.TabIndex = 8;
-            this.cancelBtn.Text = "Cancelar";
-            this.cancelBtn.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Nombre de Pasta";
-            // 
             // AddCompound
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 220);
+            this.ClientSize = new System.Drawing.Size(332, 220);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.acceptBtn);
@@ -165,14 +167,14 @@
         #endregion
 
         private System.Windows.Forms.TextBox compoundTxt;
+        private System.Windows.Forms.Button acceptBtn;
+        private System.Windows.Forms.Button cancelBtn;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton goldBackRadBtn;
         private System.Windows.Forms.RadioButton goldFrontRadBtn;
         private System.Windows.Forms.RadioButton pinkGlassRadBtn;
         private System.Windows.Forms.RadioButton glassRadBtn;
         private System.Windows.Forms.RadioButton conductorRadBtn;
         private System.Windows.Forms.RadioButton fritRadBtn;
-        private System.Windows.Forms.Button acceptBtn;
-        private System.Windows.Forms.Button cancelBtn;
-        private System.Windows.Forms.Label label1;
     }
 }

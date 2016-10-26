@@ -34,7 +34,7 @@ namespace WindowsFormsApplication2
             this.Close();
         }
 
-        private void iniciarSesiónToolStripMenuItem_Click(object sender,  EventArgs e)
+        private void signInMenuItem_Click(object sender,  EventArgs e)
         {
             SignInForm signIn = new SignInForm(database);
             signIn.ShowDialog();
@@ -42,27 +42,12 @@ namespace WindowsFormsApplication2
             {
                 addMenuItem.Visible = true;
                 removeMenuItem.Visible = true;
-                logOffMenuItem.Visible = true;
-                label1.Text = DBConnect.getUserName();
             }
-            //database = new DBConnect();
-            
-            //List<string>[] list = new List<string>[2];
-            //list = database.Select();
-            //label1.Text = list[0].ElementAt(0);
+            logOffMenuItem.Visible = true;
+            label1.Text = DBConnect.getUserName();
         }
-        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
-        private void agregarToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
 
-        }
-        private void familiaToolStripMenuItem_Click1(object sender, EventArgs e)
-        {
-
-        }
 
         private void logOffMenuItem_Click(object sender, EventArgs e)
         {
@@ -83,6 +68,24 @@ namespace WindowsFormsApplication2
         {
             AddModel addModel = new AddModel(database);
             addModel.ShowDialog();
+        }
+
+        private void addPrimeMenuItem_Click(object sender, EventArgs e)
+        {
+            AddPrimeMatter addPrimeMatter = new AddPrimeMatter(database);
+            addPrimeMatter.ShowDialog();
+        }
+
+        private void addCompoundMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCompound addCompound = new AddCompound(database);
+            addCompound.ShowDialog();
+        }
+
+        private void addEmployeeMenuItem_Click(object sender, EventArgs e)
+        {
+            AddEmployee addEmployee = new AddEmployee(database);
+            addEmployee.ShowDialog();
         }
     }
 }

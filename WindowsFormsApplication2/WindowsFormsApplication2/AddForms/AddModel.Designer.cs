@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.modelTxt = new System.Windows.Forms.TextBox();
+            this.descriptionTxt = new System.Windows.Forms.TextBox();
             this.familyComboBox = new System.Windows.Forms.ComboBox();
             this.subSubComboBox = new System.Windows.Forms.ComboBox();
             this.subDiaComboBox = new System.Windows.Forms.ComboBox();
@@ -58,19 +58,19 @@
             this.cancelBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // modelTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.modelTxt.Location = new System.Drawing.Point(112, 28);
+            this.modelTxt.Name = "modelTxt";
+            this.modelTxt.Size = new System.Drawing.Size(100, 20);
+            this.modelTxt.TabIndex = 0;
             // 
-            // textBox2
+            // descriptionTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.descriptionTxt.Location = new System.Drawing.Point(112, 54);
+            this.descriptionTxt.Name = "descriptionTxt";
+            this.descriptionTxt.Size = new System.Drawing.Size(100, 20);
+            this.descriptionTxt.TabIndex = 1;
             // 
             // familyComboBox
             // 
@@ -285,6 +285,7 @@
             this.acceptBtn.TabIndex = 13;
             this.acceptBtn.Text = "Aceptar";
             this.acceptBtn.UseVisualStyleBackColor = true;
+            this.acceptBtn.Click += new System.EventHandler(this.acceptBtn_Click);
             // 
             // cancelBtn
             // 
@@ -294,6 +295,7 @@
             this.cancelBtn.TabIndex = 14;
             this.cancelBtn.Text = "Cancelar";
             this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // AddModel
             // 
@@ -326,11 +328,10 @@
             this.Controls.Add(this.subDiaComboBox);
             this.Controls.Add(this.subSubComboBox);
             this.Controls.Add(this.familyComboBox);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.descriptionTxt);
+            this.Controls.Add(this.modelTxt);
             this.Name = "AddModel";
             this.Text = "AddModel";
-            this.Load += new System.EventHandler(this.AddModel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,8 +339,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox modelTxt;
+        private System.Windows.Forms.TextBox descriptionTxt;
         private System.Windows.Forms.ComboBox familyComboBox;
         private System.Windows.Forms.ComboBox subSubComboBox;
         private System.Windows.Forms.ComboBox subDiaComboBox;

@@ -23,148 +23,59 @@ namespace WindowsFormsApplication2
             fill();
         }
 
-        private void AddModel_Load(object sender, EventArgs e)
+
+        private void acceptBtn_Click(object sender, EventArgs e)
         {
-            
+            String query = "INSERT INTO model VALUES('" + modelTxt.Text.ToString() + "', '" + descriptionTxt.Text + "', '" + familyComboBox.Text + "', '" +
+                subDiaComboBox.Text + "', '" + subSubComboBox.Text + "', '" + primeSubComboBox.Text + "', '" + primeDiaComboBox.Text + "')";
+            database.insert(query);
+
+            query = "INSERT INTO compound VALUES('" + modelTxt.Text.ToString() + "', '" + goldBackComboBox.Text + "', '" + goldFrontComboBox.Text + "', '" +
+                glassComboBox.Text + "', '" + pinkGlassComboBox.Text + "', '" + conductorComboBox.Text + "', '" + fritComboBox.Text + "')";
+            database.insert(query);
+            this.Close();
         }
+
         private void fill()
         {
             database.openConnection();
-            String query;
-            MySqlDataReader reader;
-            MySqlCommand sc;
-            DataTable dt = new DataTable();
 
-            /*
-            "glass", "pink_glass", "conductor", "frit" };
-            "g_id", "pg_id", "c_id", "f_id"};
-            */
+            writeComboBox(pinkGlassComboBox, "pg_id", "pink_glass");
+            writeComboBox(glassComboBox, "g_id", "glass");
+            writeComboBox(goldFrontComboBox, "gf_id", "gold_front");
+            writeComboBox(goldBackComboBox, "gb_id", "gold_back");
+            writeComboBox(primeDiaComboBox, "pmd_id", "prime_matter_diaf");
+            writeComboBox(primeSubComboBox, "pms_id", "prime_matter_sub");
+            writeComboBox(subDiaComboBox, "sd_id", "sub_diafragm");
+            writeComboBox(subSubComboBox, "ss_id", "sub_substrate");
+            writeComboBox(familyComboBox, "family_name", "family");
+            writeComboBox(conductorComboBox, "c_id", "conductor");
+            writeComboBox(fritComboBox, "f_id", "frit");
 
-            //Glass
-            query = "SELECT g_id FROM glass";
-            sc = new MySqlCommand(query, database.connection);
-            reader = sc.ExecuteReader();
-            if (reader.HasRows)
-            {
-                //dt = new DataTable();
-                dt.Columns.Add("g_id", typeof(string));
-                dt.Load(reader);
-
-                goldFrontComboBox.ValueMember = "g_id";
-                goldFrontComboBox.DisplayMember = "g_id";
-                goldFrontComboBox.DataSource = dt;
-            }
-            reader.Close();
-
-            //Gold Front
-            query = "SELECT gf_id FROM gold_front";
-            sc = new MySqlCommand(query, database.connection);
-            reader = sc.ExecuteReader();
-            if (reader.HasRows)
-            {
-                //dt = new DataTable();
-                dt.Columns.Add("gf_id", typeof(string));
-                dt.Load(reader);
-
-                goldFrontComboBox.ValueMember = "gf_id";
-                goldFrontComboBox.DisplayMember = "gf_id";
-                goldFrontComboBox.DataSource = dt;
-            }
-            reader.Close();
-
-            //Gold Back
-            query = "SELECT gb_id FROM gold_back";
-            sc = new MySqlCommand(query, database.connection);
-            reader = sc.ExecuteReader();
-            if (reader.HasRows)
-            {
-                //dt = new DataTable();
-                dt.Columns.Add("gb_id", typeof(string));
-                dt.Load(reader);
-
-                goldBackComboBox.ValueMember = "gb_id";
-                goldBackComboBox.DisplayMember = "gb_id";
-                goldBackComboBox.DataSource = dt;
-            }
-            reader.Close();
-
-            //Prime Matter Diafragm
-            query = "SELECT pmd_id FROM prime_matter_diaf";
-            sc = new MySqlCommand(query, database.connection);
-            reader = sc.ExecuteReader();
-            if (reader.HasRows)
-            {
-                //dt = new DataTable();
-                dt.Columns.Add("pmd_id", typeof(string));
-                dt.Load(reader);
-
-                primeDiaComboBox.ValueMember = "pmd_id";
-                primeDiaComboBox.DisplayMember = "pmd_id";
-                primeDiaComboBox.DataSource = dt;
-            }
-            reader.Close();
-
-            //Prime Matter Substrate
-            query = "SELECT pms_id FROM prime_matter_sub";
-            sc = new MySqlCommand(query, database.connection);
-            reader = sc.ExecuteReader();
-            if (reader.HasRows)
-            {
-                //dt = new DataTable();
-                dt.Columns.Add("pms_id", typeof(string));
-                dt.Load(reader);
-
-                primeSubComboBox.ValueMember = "pms_id";
-                primeSubComboBox.DisplayMember = "pms_id";
-                primeSubComboBox.DataSource = dt;
-            }
-            reader.Close();
-
-            //Diafragm Sub
-            query = "SELECT ds_id FROM diafragm_sub";
-            sc =new MySqlCommand(query, database.connection);
-            reader = sc.ExecuteReader();
-            if (reader.HasRows)
-            {
-                //dt = new DataTable();
-                dt.Columns.Add("ds_id", typeof(string));
-                dt.Load(reader);
-                familyComboBox.ValueMember = "ds_id";
-                familyComboBox.DisplayMember = "ds_id";
-                familyComboBox.DataSource = dt;
-            }
-            reader.Close();
-
-            //Substrate Sub
-            query = "SELECT ss_id FROM substrate_sub";
-            sc = new MySqlCommand(query, database.connection);
-            reader = sc.ExecuteReader();
-            if (reader.HasRows)
-            {
-                //dt = new DataTable();
-                dt.Columns.Add("ss_id", typeof(string));
-                dt.Load(reader);
-                subSubComboBox.ValueMember = "ss_id";
-                subSubComboBox.DisplayMember = "ss_id";
-                subSubComboBox.DataSource = dt;
-            }
-            reader.Close();
-
-            //Family
-            query = "SELECT family_name FROM family";
-            sc = new MySqlCommand(query, database.connection);
-            reader = sc.ExecuteReader();
-            if (reader.HasRows) {
-                dt = new DataTable();
-                dt.Columns.Add("family_name", typeof(string));
-                dt.Load(reader);
-                familyComboBox.ValueMember = "family_name";
-                familyComboBox.DisplayMember = "family_name";
-                familyComboBox.DataSource = dt;
-            }
-            reader.Close();
-
+            
             database.closeConnection();
+        }
+
+        private void writeComboBox(ComboBox comboBox, String field, String datab)
+        {
+            String query = "SELECT " + field + " FROM " + datab;
+            MySqlCommand sc = new MySqlCommand(query, database.connection);
+            MySqlDataReader reader = sc.ExecuteReader();
+            if (reader.HasRows)
+            {
+                DataTable dt = new DataTable();
+                dt.Columns.Add(field, typeof(string));
+                dt.Load(reader);
+                comboBox.ValueMember = field;
+                comboBox.DisplayMember = field;
+                comboBox.DataSource = dt;
+            }
+            reader.Close();
+        }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
